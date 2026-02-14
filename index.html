@@ -293,8 +293,7 @@
       </div>
     </div>
   </section>
-
- <section class="hero is-small" style="margin-bottom: 4rem;">
+<section class="hero is-small" style="margin-bottom: 4rem;">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered" style="margin-bottom: 1rem;">Main Results</h2>
@@ -305,8 +304,8 @@
         overflow-y: hidden;
         white-space: nowrap;
         padding: 1rem 0;
-        scrollbar-width: thin; /* Firefox */
-        -ms-overflow-style: -ms-autohiding-scrollbar; /* IE/Edge */
+        scrollbar-width: thin;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
       ">
         <!-- 内部 flex 容器 -->
         <div class="results-row" style="
@@ -314,7 +313,8 @@
           gap: 2rem;
           padding: 0 1rem;
         ">
-          <!-- Item 1 -->
+
+          <!-- Item 1: error.png -->
           <div class="item" style="
             flex: 0 0 auto;
             width: 400px;
@@ -324,13 +324,13 @@
             align-items: center;
             text-align: center;
           ">
-            <img src="static/images/error.png" alt="Relative reconstruction error" loading="lazy" style="width: 100%; height: auto; max-width: 100%;" />
+            <img src="static/images/error.png" alt="Relative reconstruction error" loading="lazy" style="width: 100%; height: auto;" />
             <p class="subtitle has-text-centered" style="font-size: 0.95rem; margin-top: 0.75rem; line-height: 1.4;">
               Relative reconstruction error of the "self\_attn.o\_proj" layer in the second Transformer Block of LLaMA2-7B by ROSE and its variants at varying sparsity rates.
             </p>
           </div>
 
-          <!-- Item 2 -->
+          <!-- Item 2: result-ppl.png -->
           <div class="item" style="
             flex: 0 0 auto;
             width: 400px;
@@ -340,13 +340,13 @@
             align-items: center;
             text-align: center;
           ">
-            <img src="static/images/result-ppl.png" alt="Perplexity results" loading="lazy" style="width: 100%; height: auto; max-width: 100%;" />
+            <img src="static/images/result-ppl.png" alt="Perplexity results" loading="lazy" style="width: 100%; height: auto;" />
             <p class="subtitle has-text-centered" style="font-size: 0.95rem; margin-top: 0.75rem; line-height: 1.4;">
               WikiText perplexity performance on LLaMA3-8B and Mistral-7B at varying sparsity rates. Best result in <b>bold</b>.
             </p>
           </div>
 
-          <!-- Item 3 -->
+          <!-- Item 3: result-model.png -->
           <div class="item" style="
             flex: 0 0 auto;
             width: 400px;
@@ -356,11 +356,12 @@
             align-items: center;
             text-align: center;
           ">
-            <img src="static/images/result-model.png" alt="Model comparison" loading="lazy" style="width: 100%; height: auto; max-width: 100%;" />
+            <img src="static/images/result-model.png" alt="Model comparison" loading="lazy" style="width: 100%; height: auto;" />
             <p class="subtitle has-text-centered" style="font-size: 0.95rem; margin-top: 0.75rem; line-height: 1.4;">
               WikiText perplexity and zero-shot accuracy on LLaMA2 models at 70% sparsity for different unstructured pruning methods. Best result in <b>bold</b>.
             </p>
           </div>
+
         </div>
       </div>
     </div>
